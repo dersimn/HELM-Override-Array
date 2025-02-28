@@ -6,6 +6,8 @@ data:
   paths: |-
     {{- range $group, $paths := .Values.paths }}
     {{- range $paths }}
-    - {{ . }}
+    - name: {{ .name }}
+      path: {{ .path }}
+      claim: {{ default .name .claim }}
     {{- end }}
     {{- end }}

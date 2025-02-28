@@ -2,4 +2,5 @@ paths:
   # Delete defaults
   #default:
   values2:
-    - "/path/from/values2"
+    - path: "/path/from/values2"
+      name: bar

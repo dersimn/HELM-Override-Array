@@ -1,4 +1,7 @@
 paths:
   default:
-    - /default1
-    - /default2
+    - name: default1
+      path: /default1
+      claim: default1claim
+    - name: default2
+      path: /default2
