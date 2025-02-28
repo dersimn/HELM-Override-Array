@@ -1,6 +1,7 @@
 paths:
-  # Delete defaults
+  # Disable defaults from HELM Chart, or previous valuesX.yaml
   #default:
+  #values1-name-doesnt-matter:
   values2:
     - path: "/path/from/values2"
       name: bar
