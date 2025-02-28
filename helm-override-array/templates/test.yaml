@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: my-config
 data:
-  paths: |-
+  paths:
     {{- range $group, $paths := .Values.paths }}
     {{- range $paths }}
     - name: {{ .name }}
